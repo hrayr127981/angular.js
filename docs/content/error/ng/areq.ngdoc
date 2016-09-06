@@ -1,9 +1,20 @@
-@ngdoc error
-@name ng:areq
-@fullName Bad Argument
-@description
-
-AngularJS often asserts that certain values will be present and truthy using a
-helper function. If the assertion fails, this error is thrown. To fix this problem,
-make sure that the value the assertion expects is defined and matches the type mentioned in the
-error.
+<!DOCTYPE html>
+<html ng-app>
+ <head>
+   <title>sada</title>
+   <meta charset="utf-8">
+   <script src="angular.min.js"></script>
+	 <script>
+	 	var DemoCtrl = function($scope)
+	 		{
+	 			$scope.name = 'World';
+	 		}
+	 </script>
+ </head>
+ 
+ <body>
+ <div ng-controller="DemoCtrl">
+	<p> Hello {{name}} !</p> 
+</div>
+ </body> 
+</html>
